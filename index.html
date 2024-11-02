@@ -3,21 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Yvonne H - Portfolio</title>\
+    <title>Yvonne H - Portfolio</title>
     <!-- favicon -->
 
     <!-- fonts(?) -->
 
     <!-- style sheets -->
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1></h1>
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- header img -->
+        <h1>Welcome.</h1>
+        <img src="images/pfp.jpg" alt="The author of this website looking into the camera">
+        <h2>I'm Yvonne, a web developer based in Richmond, BC.</h2>
     </header>
 
-    <main></main>
+    <main class="site-main">
+        <section class="section-about" id="about">
+            <h2>A little about me...</h2>
+            <p>
+                My name is Yvonne, I'm a BCIT Front-End Web Developer student with a math background. I prefer milk tea over black tea.
+            </p>
+        </section>
 
-    <footer></footer>
+        <section class="section-projects" id="projects">
+            <h2>Upcoming projects</h2>
+            <article class="project html-css-project">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>Country Website</h3>
+                </a>
+            </article>
+
+            <article class="project html-css-project">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>Business Website</h3>
+                </a>
+            </article>
+
+            <article class="project js-project">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>JavaScript Game</h3>
+                </a>
+            </article>
+
+            <article class="project js-project">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>Movie Database</h3>
+                </a>
+            </article>
+
+            <article class="project wordpress-site">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>Vancouver</h3>
+                </a>
+            </article>
+
+            <article class="project wordpress-site">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>Mindset</h3>
+                </a>
+            </article>
+
+            <article class="project wordpress-site">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>School</h3>
+                </a>
+            </article>
+
+            <article class="project online-stores">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>Shopify Store</h3>
+                </a>
+            </article>
+            
+            <article class="project online-stores">
+                <a href="#">
+                    <img src="images/project-thumbnail-placeholder.jpg" alt="A photo with codes">
+                    <h3>WooCommerce Store</h3>
+                </a>
+            </article>
+        </section>
+
+        <section class="section-contact" id="contact">
+            <h2>Trying to get in touch?</h2>
+            <a href="mailto:contact@yvonneh.com">Email me.</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Yvonne Huang</p>
+    </footer>
 </body>
 </html>
