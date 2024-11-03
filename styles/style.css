@@ -22,50 +22,59 @@
 
 /* Typography
 --------------------------------------------- */
+html {
+    scroll-padding: 5rem;
+    scroll-behavior: smooth;
+}
+
+/* front: #cdcac0
+dark back: #1b263b
+light back: #b7aeb6 */
+
 body {
-	
+	font-family: monda, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #cdcac0;
+    background-color: #1b263b;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-	
+h3 {
+    font-family: arvo, serif;
+    margin: .5em 0;
+	color: #b7aeb6;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #cdcac0;
 }
 
 p {
-	
+	margin: 1em 0;
 }
 
-
-/* Elements
---------------------------------------------- */
-ul {
-	
-}
-
-ol {
-	
-}
-
-dl {
-	
-}
-
-figure {
-	
-}
-
-table {
-	
-}
 
 /* Links
 --------------------------------------------- */
-a {
-	
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: #1b263b;
 }
 
 a:visited {
@@ -73,11 +82,11 @@ a:visited {
 }
 
 a:hover {
-	
+
 }
 
 a:focus {
-	
+	outline: 1px solid #b7aeb6;
 }
 
 a:active {
@@ -88,7 +97,13 @@ a:active {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+.site-wrapper {
+    margin: 0 auto;
+}
 
+section {
+    margin: 3rem 0;
+}
 
 
 /*--------------------------------------------------------------
@@ -97,11 +112,127 @@ a:active {
 
 /* Header
 --------------------------------------------- */
+.site-header {
+    /* height: 3.5rem; */
+    background-color: #cdcac0;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    width: 100%;
+    max-width: 68.75rem;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 50em) {
+    nav ul {
+        justify-content: flex-end;
+    }
+}
+
+nav ul li {
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+
+nav a {
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #b7aeb6;
+}
 
 
 /* Main
 --------------------------------------------- */
+main {
+    max-width: 68.75rem;
+    padding: 0 1rem;
+    margin: 0 auto 5rem;
+}
+
+/* header */
+.page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pfp {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 50%;
+}
+
+@media (min-width: 43.75em) {
+
+    /* .page-header h2 {
+        width: 50%
+    } */
+}
+
+/* projects */
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.project {
+    max-width: 20rem;
+    border: 2px solid #b7aeb679;
+    border-radius: 3%;
+}
+
+.project img {
+    border-radius: 3%;
+}
+
+.project h3 {
+    padding: 0 1rem .5rem;
+}
+
+.project a {
+    padding-bottom: 3.5rem;
+}
+
+/* contact */
+.section-contact {
+    text-align: center;
+}
+
+.section-contact a {
+    background-color: #cdcac0;
+    color: #1b263b;
+    padding: .5rem;
+    border-radius: 5%;
+    display: inline-block;
+}
 
 
 /* Footer
 --------------------------------------------- */
+footer {
+    text-align: center;
+    color: #1b263b;
+    background-color: #b7aeb6;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
