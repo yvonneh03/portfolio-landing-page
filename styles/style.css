@@ -284,6 +284,23 @@ nav a:hover {
 }
 
 
+/* back to top button */
+.btn-back-to-top {
+    font-size: 1.5rem;
+    background-color: #cdcac0;
+    padding: 0 0.5rem;
+    border-radius: 15%;
+    border: 1px solid #1b263b;
+    position: fixed;
+    right: 5%;
+    bottom: 7%;
+}
+
+.btn-back-to-top:hover {
+    background-color: #b7aeb6;
+}
+
+
 /* Footer
 --------------------------------------------- */
 footer {
