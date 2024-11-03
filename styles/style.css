@@ -44,7 +44,7 @@ h1,
 h2,
 h3 {
     font-family: arvo, serif;
-    margin: .5em 0;
+    margin: .7rem 0;
 	color: #b7aeb6;
 }
 
@@ -82,16 +82,17 @@ a:visited {
 }
 
 a:hover {
-
+    background-color: #b7aeb6;
 }
 
 a:focus {
 	outline: 1px solid #b7aeb6;
+    border-radius: 5%;
 }
 
-a:active {
+/* a:active {
 	
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -101,8 +102,27 @@ a:active {
     margin: 0 auto;
 }
 
+.site-header {
+    background-color: #cdcac0;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    max-width: 68.75rem;
+    padding: 0 1rem;
+    margin: 0 auto 5rem;
+}
+
 section {
     margin: 3rem 0;
+}
+
+@media (min-width: 43.75em) {
+
+    main {
+        margin-top: 2rem;
+    }
 }
 
 
@@ -112,13 +132,6 @@ section {
 
 /* Header
 --------------------------------------------- */
-.site-header {
-    /* height: 3.5rem; */
-    background-color: #cdcac0;
-    position: sticky;
-    top: 0;
-}
-
 nav {
     width: 100%;
     max-width: 68.75rem;
@@ -129,22 +142,15 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    max-width: 30rem;
+    /* max-width: 30rem; */
     display: flex;
     justify-content: space-evenly;
 }
 
-@media (min-width: 50em) {
-    nav ul {
-        justify-content: flex-end;
-    }
-}
-
 nav ul li {
-    margin: 0 auto;
+    margin: 0;
     padding: 1rem 0;
 }
-
 
 nav a {
     padding: 1rem;
@@ -154,19 +160,22 @@ nav a:hover {
     background-color: #b7aeb6;
 }
 
+@media (min-width: 43.75em) {
+
+    nav ul {
+        justify-content: flex-end;
+    }
+}
+
 
 /* Main
 --------------------------------------------- */
-main {
-    max-width: 68.75rem;
-    padding: 0 1rem;
-    margin: 0 auto 5rem;
-}
 
 /* header */
 .page-header {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -178,10 +187,10 @@ main {
 
 @media (min-width: 43.75em) {
 
-    /* .page-header h2 {
-        width: 50%
-    } */
+    /* pfp on the side */
+
 }
+
 
 /* projects */
 .projects-wrapper {
@@ -205,9 +214,18 @@ main {
     padding: 0 1rem .5rem;
 }
 
-.project a {
-    padding-bottom: 3.5rem;
+.project:hover {
+    background-color: #b7aeb6;
 }
+
+.project:hover h3 {
+    color:#1b263b;
+}
+
+.project a {
+    padding-bottom: 3.7rem;
+}
+
 
 /* contact */
 .section-contact {
@@ -220,6 +238,10 @@ main {
     padding: .5rem;
     border-radius: 5%;
     display: inline-block;
+}
+
+.section-contact a:hover {
+    background-color: #b7aeb6;
 }
 
 
